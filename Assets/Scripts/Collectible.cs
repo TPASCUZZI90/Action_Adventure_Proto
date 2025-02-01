@@ -7,6 +7,7 @@ public class Collectible : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Destroy(gameObject);
+            Debug.Log("Collectible collected");
         }
     }
 }
