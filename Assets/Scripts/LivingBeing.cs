@@ -19,7 +19,7 @@ public class LivingBeing : MonoBehaviour
         }
     }
 
-    IEnumerator Die()
+    protected virtual IEnumerator Die()
     {
         gameObject.GetComponent<Renderer>().material = deathMat;
         yield return new WaitForSeconds(1f);        

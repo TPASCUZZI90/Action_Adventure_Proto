@@ -31,13 +31,13 @@ public class PlayerAttack : MonoBehaviour
         {
             if (Input.GetButtonDown("Fire1"))
             {
-                playerControlScript.AlignWithCamera();
+                //playerControlScript.AlignWithCamera();
                 LightAttack();
             }
 
             if (heavyAttackAxis > 0)
             {
-                playerControlScript.AlignWithCamera();
+                //playerControlScript.AlignWithCamera();
                 HeavyAttack();
             }
         }        
